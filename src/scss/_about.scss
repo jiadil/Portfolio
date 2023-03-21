@@ -1,0 +1,70 @@
+/******************************************************************************
+ * About
+ ******************************************************************************/
+.tl-about-image {
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.tl-about-data {
+    .tl-about-description {
+        text-align: center;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .tl-about-information {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: var(--mb-2-5);
+
+        .tl-about-information-title {
+            font-size: var(--h2-font-size);
+            font-weight: var(--font-semi-bold);
+            color: var(--first-color-alt);
+            display: block;
+            text-align: center;
+        }
+
+        .tl-about-information-name {
+            font-size: var(--smaller-font-size);
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .tl-about-download {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/////////////////////////////////////////////////////////////
+/// Media
+// >= 568px
+@media screen and (min-width: 568px) {
+    .tl-about-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// >= 768px
+@media screen and (min-width: 768px) {
+    .tl-about-container {
+        column-gap: 5rem;
+        
+        .tl-about-image {
+            width: 350px;
+        }
+        .tl-about-description {
+            text-align: initial;
+        }
+        .tl-about-information {
+            justify-content: space-between;
+        }
+        .tl-about-download {
+            justify-content: initial;
+        }
+    }
+}
