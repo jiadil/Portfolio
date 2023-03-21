@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <!-- Nav Start -->
+    <!-- Start Nav -->
     <header class="tl-header" id="header">
         <nav class="tl-nav tl-container">
             <a href="#" class="tl-nav-title">TIAN</a>
@@ -95,10 +95,547 @@
             </div>
         </nav>
     </header>
-    <!-- Nav End -->
-    <?php include("src/content/main.php"); ?>
-    <?php include("src/content/footer.php"); ?>
+    <!-- End Nav -->
 
+    <!-- Start Main -->
+    <main class="tl-main">
+        <!-- Start Home -->
+        <section class="home tl-section" id="home">
+            <div class="tl-home-container tl-container tl-grid">
+                <div class="tl-home-content tl-grid">
+                    <div class="tl-home-social-icon-list">
+                        <a href="https://github.com/jiadil" class="tl-home-social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jiadil1010/" class="tl-home-social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+        
+                    <div class="tl-home-intro">
+                        <img class="tl-home-intro-image" src="src/images/home.jpeg">
+                        <div class="tl-home-intro-text">
+                            <h1 class="tl-home-intro-text-title">
+                                Hi, I'm <div id="typewriter"></div>
+                            </h1>
+                            
+                            <!-- <h3 class="tl-home-intro-text-subtitle">Student at Simon Fraser University</h3> -->
+                            <p class="tl-home-intro-text-description">
+                                I am a student at Simon Fraser University pursuing a double degree in Health Sciences and Computing Sciences.
+                            </p>
+                            <a href="#contact" class="tl-button tl-button-flex">
+                                <span>Contact Me</span>
+                                <i class="uil uil-envelope-edit tl-button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tl-home-scroll">
+                    <a href="#about" class="tl-home-scroll-button tl-button-flex">
+                        <i class="uil uil-mouse-alt-2 tl-home-scroll-mouse"></i>
+                        <span class="tl-home-scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down tl-home-scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Home -->
+
+        <!-- Start About -->
+        <section class="about tl-section" id="about">
+            <h2 class="tl-section-title">About Me</h2>
+            
+            <span class="tl-section-subtitle">My name is Jiadi Luo but you can also call me Tian</span>
+            
+            <div class="tl-about-container tl-container tl-grid">
+                <img class="tl-about-image" src="src/images/me.jpeg" alt="">
+        
+                <div class="tl-about-data">
+                    <p class="tl-about-description">
+                        I recently completed an 8-month co-op as a web developer, where I honed my skills in front-end development and gained valuable experience working on real-world projects.
+                        <br><br>Now, I'm eager to expand my knowledge in back-end development to enhance my skills and offer more value to my future projects. 
+                        <br><br>Outside of coding, I'm passionate about music, cats, and travel. Exploring different cultures and perspectives is a vital aspect of my life, and I'm always seeking new opportunities to grow and learn.
+                    </p>
+        
+                    <div class="tl-about-download">
+                        <a download="" href="pdf/Jiadi_Luo_resume.pdf" class="tl-button tl-button-flex">
+                            <span>Download Resume</span>
+                            <i class="uil uil-download-alt tl-button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- Start Skills -->
+        <section class="skills tl-section" id="skills">
+            <h2 class="tl-section-title">Skills</h2>
+            
+            <span class="tl-section-subtitle">My skillsets</span>
+        
+            <div class="tl-skills-container tl-container tl-grid">
+                <div class="tl-row">
+                    <!-- Skill 1 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-html5-alt"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>HTML</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 2 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-java-script"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>JavaScript</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 3 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-css3-simple"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>CSS/SCSS</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 4 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-docker"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>Docker</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 5 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>Python</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 6 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-github"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>GitHub</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 7 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-database"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>SQL</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 8 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>Bootstrap</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 9 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-visual-studio"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>VSCode</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 10 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="fa-regular fa-c"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>C/C++</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 11 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-linux"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>Linux</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Skill 12 -->
+                    <div class="tl-skills-card-container">
+                        <div class="tl-skills-card tl-skills-card-shadow">
+                            <div class="tl-skills-card-icon">
+                                <i class="uil uil-code-branch"></i>
+                            </div>
+                            <div class="tl-skills-card-text">
+                                <h2>Git</h2>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </section>
+        <!-- End Skills -->
+
+        <!-- Start Qualification -->
+        <section class="qualification tl-section" id="qualification">
+            <h2 class="tl-section-title">Qualification</h2>
+            
+            <span class="tl-section-subtitle">My personal journey</span>
+            
+            <div class="tl-qualification-container tl-container">
+                <div class="tl-row mt-lg-0">
+                    <!-- Start Education -->
+                    <div class="tl-qualification-content col-lg-6 col-sm-10 col-md-10 mt-2" id="tl-qualification-education">
+                        <div class="tl-qualification-button">
+                            <i class="tl-qualification-icon uil uil-graduation-cap"></i> Education
+                        </div>
+        
+                        <div id="tl-qualification-education-timeline">
+                            <div class="tl-container py-2"> 
+                                <!-- Timeline item 1 -->
+                                <div class="row">
+                                    <!-- Timeline design -->
+                                    <div class="col-auto text-center flex-column d-sm-flex">
+                                        <div class="tl-qualification-journey row h-50">
+                                            <div class="col">
+                                                <span class="tl-qualification-line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+        
+                                        <h5>
+                                            <span class="tl-qualification-calendar badge">
+                                                <i class="tl-qualification-calendar-icon uil uil-calendar-alt"></i>
+                                                2018
+                                            </span>
+                                        </h5>
+        
+                                        <div class="tl-qualification-journey row h-50">
+                                            <div class="col">
+                                                <span class="tl-qualification-line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Timeline content Events -->
+                                    <div class="col py-2">
+                                        <div class="tl-qualification-education-card tl-qualification-card-transparent tl-qualification-card-shadow tl-qualification-card-mirror-face card">
+                                            <div class="card-body">
+                                                <div class="tl-qualification-task">
+                                                    <div class="tl-qualification-abstract">
+                                                        <h3 class="tl-qualification-title"> BSc Computing Science | BSc Health Sciences read in Life Sciences </h3>
+                                                        <p class="tl-qualification-subtitle">
+                                                            Simon Fraser University
+                                                            <br>2018 - Present
+                                                        </p>
+                                                    </div>
+                                                    <div class="tl-qualification-details">
+                                                        <p class="tl-qualification-subtitle">
+                                                            CGPA: 3.85
+                                                            <br>President's Honor Roll, 2020-2021
+                                                            <br>Dean's Honor Roll, 2019-2021
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Timeline item end -->
+        
+                                <div class="row">
+                                    <!-- Timeline design -->
+                                    <div class="col-auto text-center flex-column d-sm-flex">
+                                        <div class="tl-qualification-journey row h-50">
+                                            <div class="col">
+                                                <span class="tl-qualification-start">
+                                                    <i class="tl-qualification-start-icon uil uil-rocket"></i>
+                                                </span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <!-- Timeline content Events -->
+                                    <div class="col py-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Education -->
+        
+                    <!-- Start Experience -->
+                    <div class="tl-qualification-content col-lg-6 col-sm-10 col-md-10 mt-2" id="tl-qualification-experience">
+                        <div class="tl-qualification-button">
+                            <i class="tl-qualification-icon uil uil-briefcase-alt"></i> Experience
+                        </div>
+        
+                        <div id="tl-qualification-experience-timeline">
+                            <div class="tl-container py-2">
+                                <!-- Timeline item 1 -->
+                                <div class="row">
+                                    <!-- Timeline design -->
+                                    <div class="col-auto text-center flex-column d-sm-flex">
+                                        <div class="tl-qualification-journey row h-50">
+                                            <div class="col">
+                                                <span class="tl-qualification-line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+        
+                                        <h5>
+                                            <span class="tl-qualification-calendar badge">
+                                                <i class="tl-qualification-calendar-icon uil uil-calendar-alt"></i>
+                                                2022
+                                            </span>
+                                        </h5>
+        
+                                        <div class="tl-qualification-journey row h-50">
+                                            <div class="col">
+                                                <span class="tl-qualification-line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Timeline content Events -->
+                                    <div class="col py-2">
+                                        <div class="tl-qualification-education-card tl-qualification-card-transparent tl-qualification-card-mirror-face tl-qualification-card-shadow card">
+                                            <div class="card-body">
+                                                <div class="tl-qualification-task">
+                                                    <div class="tl-qualification-abstract">
+                                                        <h3 class="tl-qualification-title"> Web Developer </h3>
+                                                        <p class="tl-qualification-subtitle">
+                                                            7Sage
+                                                            <br>September 2022 - Present
+                                                        </p>
+                                                    </div>
+                                                    <div class="tl-qualification-details">
+                                                        <p class="tl-qualification-subtitle"> 
+                                                            Developed and maintained LSAT exam prep website with 200K+ users
+                                                            <br><br>Utilized JavaScript, jQuery, PHP, and SQL for efficient code
+                                                            <br><br>Designed and developed front-end/back-end with WordPress
+                                                            <br><br>Collaborated with team to implement new features and optimize performance
+                                                            <br><br>Containerized website with Docker to streamline development
+                                                            <br><br>Managed code repository on GitHub and improved user experience
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- Timeline item end -->
+                                <div class="row">
+                                    <!-- Timeline design -->
+                                    <div class="col-auto text-center flex-column d-sm-flex">
+                                        <div class="tl-qualification-journey row h-50">
+                                            <div class="col">
+                                                <span class="tl-qualification-start">
+                                                    <i class="tl-qualification-start-icon uil uil-rocket"></i>
+                                                </span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <!-- Timeline content Events -->
+                                    <div class="col py-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Experience -->
+                </div>
+            </div>
+        </section>
+        <!-- End Qualification -->
+
+        <!-- Start Portfolio -->
+        <section class="portfolio tl-section" id="portfolio">
+            <h2 class="tl-section-title" i18n="portfolio__title">Portfolio</h2>
+            <span class="tl-section-subtitle" i18n="portfolio__subtitle">Most recent works</span>
+        
+            <div class="tl-container">
+                <div class="blog-slider tl-container">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        
+                        <!-- Start portfolio item 1 -->
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="src/images/tl-portfolio-1.png" alt="Twitter type SNS ">
+                            </div>
+        
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code"> August 2022</span>
+                                <div class="blog-slider__title"> Strata Management Company Database </div>
+                                <div class="blog-slider__text"> 
+                                    Design a database and a web page for a simulated strata management system consisting of all the relevant information using XAMPP with MySQL, PHP, Bootstrap, and JS and has various data relationships like one-to-one, one-to-many, and many-to-many.
+                                </div>
+                                <a href="https://github.com/jiadil/CMPT354-SQL-strata" target="_blank" class="tl-button blog-slider__button"> 
+                                    Source Code
+                                    <i class="fa-solid fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End portfolio item 1 -->
+        
+                        <!-- Start portfolio item 2 -->
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="" alt="Portfolio item">
+                            </div>
+        
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code"> May 2022</span>
+                                <div class="blog-slider__title"> Moment website </div>
+                                <div class="blog-slider__text"> Designed flexible page layouts with custom navigation and animated buttons using Bootstrap, creating an accessible user interface with HTML5, modern CSS, Bootstrap, and JS, and collecting data with MongoDB. </div>
+                                <a href="https://aqueous-crag-12779.herokuapp.com/" target="_blank" class="tl-button blog-slider__button"> 
+                                    Demo
+                                    <i class="uil uil-play button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End portfolio item 2 -->
+                        
+                        <div class="blog-slider__pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio -->
+
+        <!-- Start Contact -->
+        <section class="contact tl-section" id="contact">
+            <h2 class="tl-section-title">Contact me</h2>
+            <span class="tl-section-subtitle">Get in touch</span>
+        
+            <div class="tl-contact-container tl-container">
+                <div class="tl-contact-content">
+                    <div class="tl-contact-information">
+                        <i class="tl-contact-icon uil uil-phone-alt"></i>
+                        <div>
+                            <h3 class="tl-contact-title">Call me</h3>
+                            <i class="fa-brands fa-canadian-maple-leaf"></i>
+                            <span class="tl-contact-subtitle">(778) 319 - 5785</span>
+                        </div>
+                    </div>
+        
+                    <div class="tl-contact-information">
+                        <i class="tl-contact-icon uil uil-envelope"></i>
+                        <div>
+                            <h3 class="tl-contact-title">E-mail</h3>
+                            <span class="tl-contact-subtitle">jiadil@sfu.ca</span>
+                        </div>
+                    </div>
+        
+                    <div class="tl-contact-information">
+                        <i class="uil uil-map-marker tl-contact-icon"></i>
+                        <div>
+                            <h3 class="tl-contact-title">Location</h3>
+                            <span class="tl-contact-subtitle">Vancouver, BC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <a href="#" class="tl-scroll-up" id="tl-scroll-up">
+        <i class="tl-scroll-up-icon uil uil-arrow-up"></i>
+    </a>
+    
+    <footer class="tl-footer">
+        <div class="tl-footer-content tl-container tl-grid">
+            <div class="tl-footer-title">
+                <p>TIAN</p>
+    
+                <div class="tl-footer-social-icon-list">
+                    <a href="https://github.com/jiadil">
+                        <i class="uil uil-github-alt tl-footer-social-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jiadil1010/">
+                        <i class="uil uil-linkedin-alt tl-footer-social-icon"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <ul class="tl-footer-item-list">
+                <li>
+                    <a href="#home" class="tl-footer-item-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="tl-footer-item-link">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="tl-footer-item-link">Skills</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="tl-footer-item-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="tl-footer-item-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    
+        <p class="tl-footer-copy-right">
+            &#169 2023 Jiadi Luo
+        </p>
+    </footer>
+    <!-- End Footer -->
 
     <!--  Typewriter CSS Effect -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>

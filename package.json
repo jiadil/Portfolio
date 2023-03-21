@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --no-source-map --watch --style=compressed src/scss/style.scss src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiadil/Portfolio-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiadil/Portfolio-html/issues"
+  },
+  "homepage": "https://github.com/jiadil/Portfolio-html#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.59.3"
+  }
+}
