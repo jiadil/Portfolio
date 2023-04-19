@@ -1,4 +1,6 @@
 # Portfolio - HTML
+Derived originally from https://github.com/jiadil/portfolio-php
+
 My responsive personal portfolio site using HTML5, CSS3, SCSS, JavaScript, Bootstrap, ... 
 
 The site is designed to adapt to various screen sizes and devices, ensuring a seamless user experience. 
