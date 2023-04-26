@@ -11,3 +11,8 @@ Additionally, JavaScript was utilized for dynamic functionality and interactivit
 
 ![image](https://user-images.githubusercontent.com/105253900/226490069-fbf2d590-c6a9-45ac-acf6-7e6d64499da6.png)
 ![image](https://user-images.githubusercontent.com/105253900/226490116-f0ac9abd-e987-4588-87c5-c596c5087fac.png)
+
+## Update: 
+```
+git commit --allow-empty -m "Trigger rebuild"
+```
