@@ -1,0 +1,25 @@
+.projects {
+    .tl-projects-container {
+        max-width: 700px;
+        .tl-project-media {
+            position: relative;
+            display: inline-block;
+            .tl-project-image-container {
+                display: flex;
+                justify-content: center;
+                .tl-project-image {
+                    margin: 2rem;
+                    transition: .3s;
+                }
+            }
+            .tl-project-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+        }
+        
+    }
+}

@@ -2,107 +2,145 @@
  * Home
  ******************************************************************************/
 .tl-home-container {
-    gap: 1rem;
-    
-    .tl-home-content{
-      grid-template-columns: .5fr 3fr;
-      padding-top: 3.5rem;
-      align-items: center;
+    &.tl-grid {
+        gap: 0;
     }
-
-    .tl-home-social-icon-list {
-      display: grid;
-      grid-template-columns: max-content;
-      row-gap: 1rem;
-
-      .tl-home-social-icon {
-        font-size: 1.25rem;
-        color: var(--first-color);
     
-        &:hover {
-          color: var(--first-color-alt)
-        }
-      }
-    }
-    .tl-home-intro{
+    // .tl-home-content{
+    //   grid-template-columns: .5fr 3fr;
+    //   padding-top: 3.5rem;
+    //   align-items: center;
+    // }
+
+    // .tl-home-social-icon-list {
+    //   display: grid;
+    //   grid-template-columns: max-content;
+    //   row-gap: 1rem;
+
+    //   .tl-home-social-icon {
+    //     font-size: 1.25rem;
+    //     color: var(--first-color);
+    
+    //     &:hover {
+    //       color: var(--first-color-alt)
+    //     }
+    //   }
+    // }
+    .tl-home-intro-text {
+        background-color: #fefefe;
+        text-align: center;
         .tl-home-intro-text-title {
             font-size: var(--big-font-size);
+            margin: 22% 13% 7% 13%;
             #typewriter {
                 font-size: var(--h2-font-size);
                 font-family: var(--robotomono-font);
                 font-weight: var(--font-medium);
                 color: var(--first-color-alt);
+                
             }
         }
-        .tl-home-intro-text-subtitle {
-            font-size: var(--h3-font-size);
-            color: var(--text-color);
-            font-weight: var(--font-medium);
-            margin-bottom: var(--mb-0-75);
-        }
+        // .tl-home-intro-text-subtitle {
+        //     font-size: var(--h3-font-size);
+        //     color: var(--text-color);
+        //     font-weight: var(--font-medium);
+        //     margin-bottom: var(--mb-0-75);
+        // }
         .tl-home-intro-text-description {
-            margin-bottom: var(--mb-2);
+            margin-bottom: 10%;
+            margin-left: 22%;
+            margin-right: 22%;
         }
     }
 
     
-    .tl-home-scroll {
-        display: none;
-        .tl-home-scroll-button {
-            color: var(--first-color);
-            transition: .3s;
-            &:hover {
-                transform: translateY(0.25rem);
-                color: var(--first-color-alt);
-                .tl-home-scroll-name {
-                    color: var(--first-color-alt);
-                }
-            }
+    // .tl-home-scroll {
+    //     display: none;
+    //     .tl-home-scroll-button {
+    //         color: var(--first-color);
+    //         transition: .3s;
+    //         &:hover {
+    //             transform: translateY(0.25rem);
+    //             color: var(--first-color-alt);
+    //             .tl-home-scroll-name {
+    //                 color: var(--first-color-alt);
+    //             }
+    //         }
 
-            .tl-home-scroll-mouse {
-                font-size: 2rem;
-            }
-            .tl-home-scroll-name {
-                font-size: var(--small-font-size);
-                color: var(--title-color);
-                font-weight: var(--font-medium);
-                margin-right: var(--mb-0-25);
-            }
-            .tl-home-scroll-arrow {
-                font-size: 1.25rem;
-            }
-        }
-    }
+    //         .tl-home-scroll-mouse {
+    //             font-size: 2rem;
+    //         }
+    //         .tl-home-scroll-name {
+    //             font-size: var(--small-font-size);
+    //             color: var(--title-color);
+    //             font-weight: var(--font-medium);
+    //             margin-right: var(--mb-0-25);
+    //         }
+    //         .tl-home-scroll-arrow {
+    //             font-size: 1.25rem;
+    //         }
+    //     }
+    // }
 }
 
 /////////////////////////////////////////////////////////////
 /// Media
 // <= 350px
 @media screen and (max-width: 350px) {
-    .tl-home-content {
-        grid-template-columns: .25fr 3fr;
-    }
+    // .tl-home-content {
+    //     grid-template-columns: .25fr 3fr;
+    // }
 }
 
 // >=568px
 @media screen and (min-width: 568px) {
-    .tl-home-content {
-        grid-template-columns: max-content 1fr 1fr;
+    // .tl-home-content {
+    //     grid-template-columns: max-content 1fr 1fr;
+    // }
+}
+
+// <=768px
+@media screen and (max-width: 768px) {
+    .tl-home-container {
+        &.tl-container.tl-grid {
+            margin: 0;
+        }
+        .tl-button {
+            margin-bottom: 25%;
+        }
     }
+    
 }
 
 // >=768px
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .tl-home-container {
-        row-gap: 5rem;
-        .tl-home-content {
-            padding-top: 5.5rem;
-            column-gap: 2rem;
+        &.tl-grid {
+            max-width: 1300px;
         }
-        .tl-home-scroll {
-            display: block;
-            .tl-home-scroll-button {
-                margin-left: 3rem;
+        
+        row-gap: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        // .tl-home-content {
+        //     padding-top: 5.5rem;
+        //     column-gap: 2rem;
+        // }
+        // .tl-home-scroll {
+        //     display: block;
+        //     .tl-home-scroll-button {
+        //         margin-left: 3rem;
+        //     }
+        // }
+    }
+    @media screen and (max-width: 1100px) {
+        .tl-home-container .tl-home-intro-text {
+            .tl-home-intro-text-description {
+                margin-bottom: 5%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .tl-home-intro-text-title {
+                margin: 13% 10% 5% 10%;
             }
         }
     }
@@ -110,7 +148,7 @@
 
 // >=1024px
 @media screen and (min-width: 1024px) {
-    .tl-home-social-icon-list {
-        transform: translateX(-6rem);
-    }
+    // .tl-home-social-icon-list {
+    //     transform: translateX(-6rem);
+    // }
 }

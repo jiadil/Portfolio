@@ -99,78 +99,97 @@
 
     <!-- Start Main -->
     <main class="tl-main">
-        <!-- Start Home -->
-        <section class="home tl-section" id="home">
-            <div class="tl-home-container tl-container tl-grid">
-                <!-- <div class="tl-home-intro"> -->
-                    <div class="tl-home-intro-text">
-                        <h1 class="tl-home-intro-text-title">
-                            Hi, I'm <div id="typewriter"></div>
-                        </h1>
-                        
-                        <!-- <h3 class="tl-home-intro-text-subtitle">Student at Simon Fraser University</h3> -->
-                        <p class="tl-home-intro-text-description">
-                            I am a student at Simon Fraser University pursuing a double degree in Health Sciences and Computing Sciences.
-                        </p>
-                        <a href="#about" class="tl-button tl-button-flex">
-                            <span>About Me</span>
-                            <!-- <i class="uil uil-envelope-edit tl-button-icon"></i> -->
-                        </a>
-                    </div>
-                    <img class="tl-home-intro-image" src="src/images/home.jpeg">
-                <!-- </div> -->
-                
-                <!-- <div class="tl-home-content tl-grid">
-                    <div class="tl-home-social-icon-list">
-                        <a href="https://github.com/jiadil" class="tl-home-social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/jiadil1010/" class="tl-home-social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                    </div>
-                </div> -->
-        
-                <!-- <div class="tl-home-scroll">
-                    <a href="#about" class="tl-home-scroll-button tl-button-flex">
-                        <i class="uil uil-mouse-alt-2 tl-home-scroll-mouse"></i>
-                        <span class="tl-home-scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down tl-home-scroll-arrow"></i>
-                    </a>
-                </div> -->
+        <!-- Start Portfolio -->
+        <section class="portfolio tl-section" id="portfolio">
+            <div class="tl-container">
+                <div class="tl-research">
+                    <h2 class="tl-section-title" i18n="portfolio__title">Research</h2>
+                    
+                    <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Conference</h2>
+                    <p class="tl-research-description">
+                        Luo, J., Domova, V., & Kim, L. H. Impact of Multi-Robot Presence and Anthropomorphism on Human Cognition and Emotion. The ACM Conference on Human Factors in Computing Systems (CHI'24). (under review)
+                    </p>
+
+                    <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Demo</h2>
+                    <p class="tl-research-description">
+                        Pulatova, S., Luo, J., Lee, J., Domova, V., Yao, Y., Rajabi, P., & Kim, L. H. SwarmFidget: Exploring Programmable ActuatedFidgeting with Swarm Robots. The ACM Symposium on User Interface Software and Technology (UIST'23).
+                    </p>
+                </div>
             </div>
         </section>
-        <!-- End Home -->
+        
+        <section class="projects tl-section" id="projects">
+            <div class="tl-container tl-projects-container">
+                <div class="tl-projects">
+                    <h2 class="tl-section-title" i18n="portfolio__title">Projects</h2>
+                    
+                    <div class="tl-single-project">
+                        <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Online Multiplayer Game Development</h2>
+                        <p class="tl-project-description">
+                            This project involved implementing concurrent gameplay, where players interacted with a shared object while enforcing crucial locking mechanisms. I also took charge of designing and overseeing the development of a Java client-server system from scratch, featuring a custom architecture built on socket programming, TCP protocol, and intricate application-layer messaging. To ensure an efficient and user-friendly experience, graphics and GUI libraries were also designed.
+                        </p>
+                        <div class="tl-project-media">
+                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                                <span>Read More</span>
+                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                            </a>
+                            <div class="tl-project-image-container">
+                                <img class="tl-project-image" src="src/images/project-game.png" alt="">
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Start About -->
-        <section class="about tl-section" id="about">
-            <!-- <h2 class="tl-section-title">About Me</h2> -->
-            
-            <!-- <span class="tl-section-subtitle">My name is Jiadi Luo, you can also call me Tian</span> -->
-            
-            <div class="tl-about-container tl-container tl-grid">
-                <img class="tl-about-image" src="src/images/me.jpeg" alt="">
-        
-                <div class="tl-about-data">
-                    <p class="tl-about-description">
-                        My interests lie in the fields of Human-Computer Interaction, database design, front-end development, VR/AR, and operating systems. My professional experience includes roles as a web developer and research assistant with a primary focus on HCI and HRI.
-                        <br><br>Outside of coding, I'm passionate about music, cats, and travel. Exploring different cultures and perspectives is a vital aspect of my life, and I'm always seeking new opportunities to grow and learn.
-                    </p>
-        
-                    <div class="tl-about-download">
-                        <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-about-CV">
-                            <span>CV</span>
-                            <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
-                        </a>
-                        <a href="" class="tl-button tl-button-flex tl-about-Contact">
-                            <span>Contact</span>
-                            <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
-                        </a>
+                    <div class="tl-single-project">
+                        <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Strata Management System</h2>
+                        <p class="tl-project-description">
+                            This project involved designing a database and a web page for a simulated strata management system consisting of all the relevant information using XAMPP with MySQL, PHP, Bootstrap, and JS and has various data relationships like one-to-one, one-to-many, and many-to-many.
+                        </p>
+                        <div class="tl-project-media">
+                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                                <span>Read More</span>
+                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                            </a>
+                            <div class="tl-project-image-container">
+                                <img class="tl-project-image" src="src/images/tl-portfolio-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-single-project">
+                        <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Discord Weather Bot</h2>
+                        <p class="tl-project-description">
+                            This project involved crafting flexible page layouts with custom navigation and animated buttons using Bootstrap, resulting in an accessible user interface that harnessed the power of HTML5, modern CSS, Bootstrap, and JavaScript. Simultaneously, I adeptly collected and managed data using MongoDB.
+                        </p>
+                        <div class="tl-project-media">
+                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                                <span>Read More</span>
+                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                            </a>
+                            <div class="tl-project-image-container">
+                                <img class="tl-project-image" src="src/images/project-weather-bot.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Moment website">
+                        <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Discord Weather Bot</h2>
+                        <p class="tl-project-description">
+                            This project involved designing flexible page layouts with custom navigation and animated buttons using Bootstrap. I created an accessible user interface using HTML5, modern CSS, Bootstrap, and JavaScript. Additionally, I collected and managed data with MongoDB.
+                        </p>
+                        <div class="tl-project-media">
+                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                                <span>Read More</span>
+                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                            </a>
+                            <div class="tl-project-image-container">
+                                <img class="tl-project-image" src="src/images/project-moment.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End About -->
+        <!-- End Portfolio -->
 
         <!-- Start Contact -->
         <section class="contact tl-section" id="contact">

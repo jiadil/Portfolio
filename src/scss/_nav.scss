@@ -18,15 +18,20 @@
 /////////////////////////////////////////////////////////////
 /// Nav
 .tl-nav{
-    max-width: 968px;
+    // max-width: 968px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: var(--header-height);
 
+    &.tl-container {
+        max-width: 1300px;
+    }
+
     .tl-nav-title {
         color: var(--first-color-alt);
-        font-weight: var(--font-medium);
+        font-size: larger;
+        // font-weight: var(--font-medium);
     }
 
     .tl-nav-button-toggle {

@@ -3,6 +3,7 @@
 /////////////////////////////////////////////////////////////
 /// Import font
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /////////////////////////////////////////////////////////////
 /// Root
@@ -19,17 +20,17 @@
     --first-color-alt-border: var(--body-color);
     --first-color-lighter: hsl(var(--hue-color), 0%, 85%);
     --title-color: hsl(var(--hue-color), 0%, 15%);
-    --text-color: hsl(var(--hue-color), 0%, 45%);
+    --text-color: rgb(50, 50, 50);
     --text-color-light: hsl(var(--hue-color), 0%, 65%);
     --input-color: hsl(var(--hue-color), 0%, 96%);
-    --body-color: hsl(var(--hue-color), 32%, 94%);
+    --body-color: #eee;
     --container-color: hsl(var(--hue-color), 0%, 98%);
     --scroll-bar-color: hsl(var(--hue-color), 0%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 0%, 80%);
     --light-color: rgba(108, 98, 98, 0.2);
 
     // Font
-    --body-font: "Barlow", "Poppins", sans-serif;
+    --body-font: "Caudex", "Barlow", "Poppins", sans-serif;
 
     // .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...
     --big-font-size: 2rem;
@@ -152,7 +153,7 @@ p {
 /////////////////////////////////////////////////////////////
 /// Layout
 .tl-container {
-    max-width: 768px;
+    max-width: 900px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -175,8 +176,8 @@ p {
 
 .tl-section-subtitle {
     display: block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
+    font-size: var(--h2-font-size);
+    margin-top: var(--mb-3);
 }
 
 .tl-section-title, 
@@ -189,10 +190,11 @@ p {
 .tl-button {
     display: inline-block;
     background-color: var(--first-color);
-    color: #FFFF;
-    padding: 1rem;
-    border-radius: .5rem;
+    // color: #FFFF;
+    padding: 1rem 2rem;
+    // border-radius: .5rem;
     font-weight: var(--font-medium);
+    transition: .3s;
 
     &:hover {
         background-color: var(--first-color-alt);
@@ -203,13 +205,13 @@ p {
 .tl-button-icon {
     font-size: 1.2rem;
     margin-left: var(--mb-0-5);
-    transition: .3s;
+    // transition: .3s;
 }
 
 .tl-button-flex {
     display: inline-flex;
     align-items: center;
-    transition: .3s;
+    // transition: .3s;
 }
 
 /////////////////////////////////////////////////////////////
@@ -217,12 +219,12 @@ p {
 ::-webkit-scrollbar {
     width: .60rem;
     background-color: var(--scroll-bar-color);
-    border-radius: .5rem;
+    // border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb-color);
-    border-radius: .5rem;
+    // border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -249,11 +251,14 @@ p {
         margin: 0;
     }
     .tl-section {
-        padding: 6rem 0 2rem;
+        padding: 13rem 0 5rem;
+        &.home {
+            padding: 8rem 0 2rem;
+        }
     }
-    .tl-section-subtitle {
-        margin-bottom: 4rem;
-    }
+    // .tl-section-subtitle {
+    //     margin-bottom: 4rem;
+    // }
     .tl-main {
         padding: 0 1rem;
     }

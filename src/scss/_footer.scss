@@ -58,22 +58,26 @@
     background-color: var(--first-color);
     opacity: .8;
     padding: 0 .3rem;
-    border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
 
     &:hover {
         background-color: var(--first-color-alt);
     }
+
+    &.tl-show-scroll {
+        bottom: 1rem;
+    }
+
+    .tl-scroll-up-icon {
+        font-size: 1.5rem;
+        color: #FFF;
+    }
 }
 
-.tl-scroll-up-icon {
-    font-size: 1.5rem;
-    color: #FFF;
-}
-
-.tl-show-scroll {
-  bottom: 1rem;
+.tl-social-linkedin,
+.tl-social-github {
+    display: none;
 }
 
 /////////////////////////////////////////////////////////////
@@ -87,6 +91,30 @@
 
 // >= 768px
 @media screen and (min-width: 768px) {
+    .tl-social-linkedin,
+    .tl-social-github {
+        display: unset;
+        position: fixed;
+        right: 1rem;
+        opacity: .8;
+        z-index: var(--z-tooltip);
+
+        .tl-social-icon {
+            color: #242424;
+            font-size: xx-large;
+            transition: .4s;
+            &:hover {
+                color: var(--first-color-alt);
+            }
+        }
+    }
+    .tl-social-linkedin {
+        bottom: 48%;
+    }
+    .tl-social-github {
+        bottom: 52%;
+    }
+    
     .tl-footer {
         padding: 5rem 0 3.5rem;
 
