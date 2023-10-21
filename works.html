@@ -38,7 +38,7 @@
                         <div class="tl-nav-menu-item-wrapper">
                             <a href="index.html" class="tl-nav-menu-item-link">
                                 <i class="uil uil-estate tl-nav-menu-item-icon"></i>
-                                <p>About</p>
+                                <p>Home</p>
                             </a>
                         </div>
                     </li>
@@ -68,15 +68,16 @@
                     </li> -->
                     <li class="tl-nav-menu-item">
                         <div class="tl-nav-menu-item-wrapper">
-                            <a href="works.html" class="tl-nav-menu-item-link">
+                            <a href="works.html" class="tl-nav-menu-item-link tl-nav-menu-item-link-active">
                                 <i class="uil uil-scenery tl-nav-menu-item-icon"></i>
                                 <p>Works</p>
                             </a>
                         </div>
                     </li>
+
                     <li class="tl-nav-menu-item">
                         <div class="tl-nav-menu-item-wrapper">
-                            <a href="#contact" class="tl-nav-menu-item-link">
+                            <a href="contact.html" class="tl-nav-menu-item-link">
                                 <i class="uil uil-message tl-nav-menu-item-icon"></i>
                                 <p>Contact</p>
                             </a>
@@ -88,7 +89,7 @@
             </div>
     
             <div class="tl-nav-button">
-                <i class="uil uil-moon tl-nav-button-change-theme" id="tl-nav-button-change-theme"></i>
+                <!-- <i class="uil uil-moon tl-nav-button-change-theme" id="tl-nav-button-change-theme"></i> -->
                 <div class="tl-nav-button-toggle" id="tl-nav-button-toggle">
                 <i class="uil uil-apps"></i>
                 </div>
@@ -107,16 +108,18 @@
                     
                     <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Conference</h2>
                     <p class="tl-research-description">
-                        Luo, J., Domova, V., & Kim, L. H. Impact of Multi-Robot Presence and Anthropomorphism on Human Cognition and Emotion. The ACM Conference on Human Factors in Computing Systems (CHI'24). (under review)
+                        <span style="font-weight: 900; color: black;">Luo, J.</span>, Domova, V., & Kim, L. H. Impact of Multi-Robot Presence and Anthropomorphism on Human Cognition and Emotion. The ACM Conference on Human Factors in Computing Systems (CHI'24). (under review)
                     </p>
 
                     <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Demo</h2>
                     <p class="tl-research-description">
-                        Pulatova, S., Luo, J., Lee, J., Domova, V., Yao, Y., Rajabi, P., & Kim, L. H. SwarmFidget: Exploring Programmable ActuatedFidgeting with Swarm Robots. The ACM Symposium on User Interface Software and Technology (UIST'23).
+                        Pulatova, S., <span style="font-weight: 900; color: black;">Luo, J.</span>, Lee, J., Domova, V., Yao, Y., Rajabi, P., & Kim, L. H. SwarmFidget: Exploring Programmable ActuatedFidgeting with Swarm Robots. The ACM Symposium on User Interface Software and Technology (UIST'23).
                     </p>
                 </div>
             </div>
         </section>
+
+        <hr size="2" style="width: 70%; margin: auto;">
         
         <section class="projects tl-section" id="projects">
             <div class="tl-container tl-projects-container">
@@ -129,9 +132,9 @@
                             This project involved implementing concurrent gameplay, where players interacted with a shared object while enforcing crucial locking mechanisms. I also took charge of designing and overseeing the development of a Java client-server system from scratch, featuring a custom architecture built on socket programming, TCP protocol, and intricate application-layer messaging. To ensure an efficient and user-friendly experience, graphics and GUI libraries were also designed.
                         </p>
                         <div class="tl-project-media">
-                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                            <a href="https://github.com/jiadil/divide-and-conquer" class="tl-button tl-button-flex tl-project-button">
                                 <span>Read More</span>
-                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                                <i class="uil uil-arrow-right tl-button-icon"></i>
                             </a>
                             <div class="tl-project-image-container">
                                 <img class="tl-project-image" src="src/images/project-game.png" alt="">
@@ -145,9 +148,9 @@
                             This project involved designing a database and a web page for a simulated strata management system consisting of all the relevant information using XAMPP with MySQL, PHP, Bootstrap, and JS and has various data relationships like one-to-one, one-to-many, and many-to-many.
                         </p>
                         <div class="tl-project-media">
-                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                            <a href="https://github.com/jiadil/strata-management-system" class="tl-button tl-button-flex tl-project-button">
                                 <span>Read More</span>
-                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                                <i class="uil uil-arrow-right tl-button-icon"></i>
                             </a>
                             <div class="tl-project-image-container">
                                 <img class="tl-project-image" src="src/images/tl-portfolio-1.png" alt="">
@@ -158,12 +161,12 @@
                     <div class="tl-single-project">
                         <h2 class="tl-section-subtitle" i18n="portfolio__subtitle">Discord Weather Bot</h2>
                         <p class="tl-project-description">
-                            This project involved crafting flexible page layouts with custom navigation and animated buttons using Bootstrap, resulting in an accessible user interface that harnessed the power of HTML5, modern CSS, Bootstrap, and JavaScript. Simultaneously, I adeptly collected and managed data using MongoDB.
+                            A Discord bot that utilizes Python to respond to users' concurrent weather requests anytime and anywhere. The bot integrates the OpenWeatherMap API to gather weather data and publishes the information using the Discord API.
                         </p>
                         <div class="tl-project-media">
-                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                            <a href="https://github.com/jiadil/weather-bot" class="tl-button tl-button-flex tl-project-button">
                                 <span>Read More</span>
-                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                                <i class="uil uil-arrow-right tl-button-icon"></i>
                             </a>
                             <div class="tl-project-image-container">
                                 <img class="tl-project-image" src="src/images/project-weather-bot.gif" alt="">
@@ -177,9 +180,9 @@
                             This project involved designing flexible page layouts with custom navigation and animated buttons using Bootstrap. I created an accessible user interface using HTML5, modern CSS, Bootstrap, and JavaScript. Additionally, I collected and managed data with MongoDB.
                         </p>
                         <div class="tl-project-media">
-                            <a href="src/pdf/Jiadi_Luo_Resume.pdf" class="tl-button tl-button-flex tl-project-button">
+                            <a href="https://aqueous-crag-12779.herokuapp.com/" class="tl-button tl-button-flex tl-project-button">
                                 <span>Read More</span>
-                                <!-- <i class="uil uil-download-alt tl-button-icon"></i> -->
+                                <i class="uil uil-arrow-right tl-button-icon"></i>
                             </a>
                             <div class="tl-project-image-container">
                                 <img class="tl-project-image" src="src/images/project-moment.png" alt="">
@@ -190,43 +193,6 @@
             </div>
         </section>
         <!-- End Portfolio -->
-
-        <!-- Start Contact -->
-        <section class="contact tl-section" id="contact">
-            <h2 class="tl-section-title">Contact me</h2>
-            <span class="tl-section-subtitle">Get in touch</span>
-        
-            <div class="tl-contact-container tl-container">
-                <div class="tl-contact-content">
-                    <div class="tl-contact-information">
-                        <i class="tl-contact-icon uil uil-phone-alt"></i>
-                        <div>
-                            <h3 class="tl-contact-title">Call me</h3>
-                            <i class="fa-brands fa-canadian-maple-leaf"></i>
-                            <span class="tl-contact-subtitle">(778) 319 - 5785</span>
-                        </div>
-                    </div>
-        
-                    <div class="tl-contact-information">
-                        <i class="tl-contact-icon uil uil-envelope"></i>
-                        <div>
-                            <h3 class="tl-contact-title">E-mail</h3>
-                            <span class="tl-contact-subtitle"><a href="mailto:jiadil@sfu.ca">jiadil@sfu.ca</a></span><br>
-                            <span class="tl-contact-subtitle"><a href="mailto:tianjdluo@gmail.com">tianjdluo@gmail.com</a></span>
-                        </div>
-                    </div>
-        
-                    <div class="tl-contact-information">
-                        <i class="uil uil-map-marker tl-contact-icon"></i>
-                        <div>
-                            <h3 class="tl-contact-title">Location</h3>
-                            <span class="tl-contact-subtitle">Vancouver, BC</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact -->
     </main>
     <!-- End Main -->
 
@@ -245,7 +211,7 @@
     <footer class="tl-footer">
         <div class="tl-footer-content tl-container tl-grid">
             <div class="tl-footer-title">
-                <p>TIAN</p>
+                <p>Tian Luo</p>
     
                 <div class="tl-footer-social-icon-list">
                     <a href="https://github.com/jiadil">
@@ -259,22 +225,13 @@
     
             <ul class="tl-footer-item-list">
                 <li>
-                    <a href="#home" class="tl-footer-item-link">Home</a>
+                    <a href="index.html" class="tl-footer-item-link">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="tl-footer-item-link">About</a>
+                    <a href="works.html" class="tl-footer-item-link tl-nav-menu-item-link-active">Works</a>
                 </li>
                 <li>
-                    <a href="#skills" class="tl-footer-item-link">Skills</a>
-                </li>
-                <li>
-                    <a href="#qualification" class="tl-footer-item-link">Qualification</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="tl-footer-item-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact" class="tl-footer-item-link">Contact</a>
+                    <a href="contact.html" class="tl-footer-item-link">Contact</a>
                 </li>
             </ul>
         </div>

@@ -16,7 +16,7 @@
     // HSL color mode
     --first-color: hsl(var(--hue-color), 0%, 14%);
     --first-color-second: hsl(var(--hue-color), 0%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 63%, 68%);
+    --first-color-alt: rgb(50, 50, 50);
     --first-color-alt-border: var(--body-color);
     --first-color-lighter: hsl(var(--hue-color), 0%, 85%);
     --title-color: hsl(var(--hue-color), 0%, 15%);
@@ -135,9 +135,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: #ecacb7;
+    // color: #ecacb7;
+    color: var(--text-color);
     &:hover {
-        color: #e17a8b;
+        // color: #e17a8b;
+        color: white;
     }
 }
 
@@ -189,11 +191,11 @@ p {
 /// Button
 .tl-button {
     display: inline-block;
-    background-color: var(--first-color);
-    // color: #FFFF;
-    padding: 1rem 2rem;
+    background-color: white;
+    padding: .6rem 2rem;
     // border-radius: .5rem;
     font-weight: var(--font-medium);
+    border: 0.5px solid black;
     transition: .3s;
 
     &:hover {
@@ -254,6 +256,14 @@ p {
         padding: 13rem 0 5rem;
         &.home {
             padding: 8rem 0 2rem;
+        }
+        &.about,
+        &.contact,
+        &.projects {
+            padding-bottom: 13rem;
+        }
+        &.projects {
+            padding-top: 8rem;
         }
     }
     // .tl-section-subtitle {

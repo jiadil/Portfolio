@@ -29,54 +29,54 @@ navMenuItemLink.forEach(link => {
 });
 
 /////////////////////////////////////////////////////////////
-/// Activate link after scrolling
-window.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll("section[id]");
-    const scrollY = window.pageYOffset;
+// /// Activate link after scrolling
+// window.addEventListener("scroll", () => {
+//     const sections = document.querySelectorAll("section[id]");
+//     const scrollY = window.pageYOffset;
 
-    sections.forEach(currentSection =>{
-        const sectionHeight = currentSection.offsetHeight;
-        const sectionTop = currentSection.offsetTop - 50;
-        const sectionId = currentSection.getAttribute("id");
+//     sections.forEach(currentSection =>{
+//         const sectionHeight = currentSection.offsetHeight;
+//         const sectionTop = currentSection.offsetTop - 50;
+//         const sectionId = currentSection.getAttribute("id");
 
-        if ((scrollY > sectionTop) && (scrollY <= sectionTop + sectionHeight)) {
-            document.querySelector(".tl-nav-menu a[href*=" + sectionId + "]").classList.add("tl-nav-menu-item-link-active");
-        } else {
-            document.querySelector(".tl-nav-menu a[href*=" + sectionId + "]").classList.remove("tl-nav-menu-item-link-active");
-        }
-    })
-})
+//         if ((scrollY > sectionTop) && (scrollY <= sectionTop + sectionHeight)) {
+//             document.querySelector(".tl-nav-menu a[href*=" + sectionId + "]").classList.add("tl-nav-menu-item-link-active");
+//         } else {
+//             document.querySelector(".tl-nav-menu a[href*=" + sectionId + "]").classList.remove("tl-nav-menu-item-link-active");
+//         }
+//     })
+// })
 
 /////////////////////////////////////////////////////////////
-/// Dark theme
-const themeButton = document.getElementById("tl-nav-button-change-theme");
-const darkTheme = "dark-theme";
-const iconTheme = "uil-sun";
+// /// Dark theme
+// const themeButton = document.getElementById("tl-nav-button-change-theme");
+// const darkTheme = "dark-theme";
+// const iconTheme = "uil-sun";
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
+// // Previously selected topic (if user selected)
+// const selectedTheme = localStorage.getItem("selected-theme");
+// const selectedIcon = localStorage.getItem("selected-icon");
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "dark" : "light";
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+// // We obtain the current theme that the interface has by validating the dark-theme class
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "dark" : "light";
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-    document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-    themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
-}
+// // We validate if the user previously chose a topic
+// if (selectedTheme) {
+//     // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+//     document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+//     themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+// }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener("click", () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme);
-    themeButton.classList.toggle(iconTheme);
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem("selected-theme", getCurrentTheme());
-    localStorage.setItem("selected-icon", getCurrentIcon());
-})
+// // Activate / deactivate the theme manually with the button
+// themeButton.addEventListener("click", () => {
+//     // Add or remove the dark / icon theme
+//     document.body.classList.toggle(darkTheme);
+//     themeButton.classList.toggle(iconTheme);
+//     // We save the theme and the current icon that the user chose
+//     localStorage.setItem("selected-theme", getCurrentTheme());
+//     localStorage.setItem("selected-icon", getCurrentIcon());
+// })
 
 /////////////////////////////////////////////////////////////
 /// Header not top
@@ -94,56 +94,63 @@ window.addEventListener("scroll", () => {
  * Home
  * Retrieved from https://www.npmjs.com/package/typewriter-effect
  ******************************************************************************/
-new Typewriter("#typewriter", {
-    strings: ["Jiadi Luo", "Tian", ""],
-    autoStart: true,
-    loop: true,
-    cursor: "|"
-});
+const typewriterElement = document.querySelector("#typewriter");
+if (typewriterElement) {
+    new Typewriter(typewriterElement, {
+        strings: ["Jiadi Luo", "Tian", ""],
+        autoStart: true,
+        loop: true,
+        cursor: "|"
+    });
+} else {
+    // Handle the case where the element with id "typewriter" is not found
+    console.log("Element with id 'typewriter' not found. Skipping Typewriter initialization.");
+    // You can also add alternative code or actions here if needed.
+}
 
 
 /******************************************************************************
  * Skills
  ******************************************************************************/
-const skillsContent = document.querySelectorAll(".tl-skills-content");
-const skillsHeaders = document.querySelectorAll(".tl-skills-head");
-skillsHeaders.forEach(skillHeader => {
-    skillHeader.addEventListener("click", () => {
-        const defaultParentClass = skillHeader.parentNode.className;
+// const skillsContent = document.querySelectorAll(".tl-skills-content");
+// const skillsHeaders = document.querySelectorAll(".tl-skills-head");
+// skillsHeaders.forEach(skillHeader => {
+//     skillHeader.addEventListener("click", () => {
+//         const defaultParentClass = skillHeader.parentNode.className;
 
-        for (i = 0; i < skillsContent.length; i++) {
-            skillsContent[i].className = "tl-skills-content tl-skills-close";
-        }
+//         for (i = 0; i < skillsContent.length; i++) {
+//             skillsContent[i].className = "tl-skills-content tl-skills-close";
+//         }
         
-        if (defaultParentClass === "tl-skills-content tl-skills-close") {
-            skillHeader.parentNode.className = "tl-skills-content tl-skills-open";
-        }
-    });
-});
+//         if (defaultParentClass === "tl-skills-content tl-skills-close") {
+//             skillHeader.parentNode.className = "tl-skills-content tl-skills-open";
+//         }
+//     });
+// });
 
 
 /******************************************************************************
  * Portfolio
  * Retrieved from https://codepen.io/bJhA/pen/NWjBaQb
  ******************************************************************************/
-var swiper = new Swiper(".blog-slider", {
-    spaceBetween: 30,
-    effect: "fade",
-    loop: true,
-    mousewheel:{
-        invert: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".blog-slider__pagination",
-      clickable: true,
-    },
-    // mousewheel: true,
-    keyboard: true,
-});
+// var swiper = new Swiper(".blog-slider", {
+//     spaceBetween: 30,
+//     effect: "fade",
+//     loop: true,
+//     mousewheel:{
+//         invert: false,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//       el: ".blog-slider__pagination",
+//       clickable: true,
+//     },
+//     // mousewheel: true,
+//     keyboard: true,
+// });
 
 /******************************************************************************
  * Scroll up top
