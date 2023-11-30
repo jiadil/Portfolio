@@ -9,8 +9,8 @@ The use of SCSS and Bootstrap allowed for efficient and organized styling.
 
 Additionally, JavaScript was utilized for dynamic functionality and interactivity.
 
-![image](https://user-images.githubusercontent.com/105253900/226490069-fbf2d590-c6a9-45ac-acf6-7e6d64499da6.png)
-![image](https://user-images.githubusercontent.com/105253900/226490116-f0ac9abd-e987-4588-87c5-c596c5087fac.png)
+<img width="1298" alt="image" src="https://github.com/jiadil/portfolio/assets/105253900/0a264aa6-520b-462a-a9d9-247a544b4b9a">
+
 
 ## Update: 
 ```
