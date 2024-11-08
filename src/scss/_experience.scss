@@ -1,0 +1,390 @@
+/* Experience Section Styles */
+.tl-experience-container {
+    padding: 2rem 0;
+}
+
+.tl-experience-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.tl-timeline-line {
+    position: absolute;
+    width: 2px;
+    background-color: var(--first-color-lighter);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tl-timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    &:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    &:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    &:nth-child(5) {
+        transition-delay: 0.5s;
+    }
+}
+
+.tl-timeline-content {
+    position: relative;
+    width: calc(50% - 30px);
+    background: var(--container-color);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.tl-timeline-item.right .tl-timeline-content {
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-color: var(--first-color-lighter);
+
+        .tl-timeline-dot {
+            transform: scale(1.1);
+            background-color: var(--first-color);
+
+            i {
+                color: var(--container-color);
+            }
+        }
+
+        .tl-timeline-data {
+            h3 {
+                color: var(--first-color);
+            }
+
+            // .tl-timeline-date {
+            //     transform: translateX(5px);
+            // }
+        }
+    }
+}
+
+.tl-timeline-dot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--container-color);
+    border: 2px solid var(--first-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+
+    i {
+        font-size: 1.2rem;
+        color: var(--first-color);
+        transition: color 0.3s ease;
+    }
+}
+
+/* Right side items */
+.tl-timeline-item.right {
+    .tl-timeline-content {
+        margin-left: auto;
+
+        .tl-timeline-dot {
+            left: -50px;
+        }
+    }
+}
+
+/* Left side items */
+.tl-timeline-item.left {
+    .tl-timeline-content {
+        margin-right: auto;
+
+        .tl-timeline-dot {
+            right: -50px;
+        }
+    }
+}
+
+/* Timeline content styling */
+.tl-timeline-data {
+    h3 {
+        font-size: var(--normal-font-size);
+        margin-bottom: 0.5rem;
+        color: var(--title-color);
+        transition: color 0.3s ease;
+    }
+
+    .tl-timeline-place {
+        color: var(--text-color);
+        font-size: var(--small-font-size);
+        margin-bottom: 0.25rem;
+    }
+
+    .tl-timeline-date {
+        color: var(--first-color);
+        font-size: var(--small-font-size);
+        margin-bottom: 0.5rem;
+        font-weight: var(--font-medium);
+        transition: transform 0.3s ease;
+    }
+
+    .tl-timeline-gpa {
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+        font-size: var(--small-font-size);
+    }
+
+    .tl-timeline-description {
+        color: var(--text-color-light);
+        font-size: var(--small-font-size);
+    }
+}
+
+.tl-highlight {
+    display: inline-block;
+    padding: 0.1em 0.3em;
+    margin: 0 0.1em;
+    border: 1px solid var(--light-medium-color);
+    font-family: var(--robotomono-font);
+    color: var(--first-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    /* Remove underline */
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+/* Popup styles */
+.tl-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 998;
+
+    &.active {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.tl-popup-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 90%;
+    max-width: 800px;
+    background: var(--container-color);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.tl-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    h3 {
+        font-size: var(--h3-font-size);
+        color: var(--title-color);
+    }
+
+    .tl-popup-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--text-color-light);
+        transition: color 0.3s ease;
+        padding: 0.25rem;
+
+        &:hover {
+            color: var(--title-color);
+        }
+    }
+}
+
+.tl-popup-content {
+    padding: 1.5rem;
+    max-height: calc(80vh - 4rem);
+    overflow-y: auto;
+}
+
+.tl-popup-subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.tl-popup-date {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-bottom: 1.5rem;
+}
+
+.tl-popup-section {
+    margin-bottom: 1.5rem;
+
+    h4 {
+        font-size: var(--normal-font-size);
+        color: var(--title-color);
+        margin-bottom: 0.75rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-size: var(--small-font-size);
+
+            &::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: var(--first-color);
+            }
+        }
+    }
+}
+
+.tl-popup-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    span {
+        padding: 0.25rem 0.75rem;
+        background: var(--first-color-lighter);
+        color: var(--first-color);
+        font-size: var(--smaller-font-size);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: var(--first-color);
+            color: var(--container-color);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tl-timeline-line {
+        left: 18px; /* Move line closer to left */
+    }
+
+    .tl-timeline-content {
+        position: relative;
+        width: 100%; /* Full width */
+        padding: 1rem;
+        padding-left: 3.5rem; /* Make space for the icon */
+        margin-left: 0 !important; /* Remove margin */
+    }
+
+    .tl-timeline-dot {
+        left: 0 !important; /* Align with content start */
+        top: 1rem;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+
+        i {
+            font-size: 1rem;
+        }
+    }
+
+    /* Ensure proper text wrapping */
+    .tl-timeline-data {
+        h3 {
+            font-size: var(--small-font-size);
+            margin-top: 0;
+            padding-right: 1rem;
+            word-wrap: break-word;
+            min-height: 35px; /* Match icon height */
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    /* Consistent layout for both sides */
+    .tl-timeline-item.left .tl-timeline-content,
+    .tl-timeline-item.right .tl-timeline-content {
+        margin: 0;
+    }
+
+    /* Container adjustments */
+    .tl-experience-container {
+        padding: 1rem;
+    }
+
+    .tl-timeline-item {
+        padding-left: 20px; /* Align with timeline */
+    }
+}
+
+/* Smaller screens */
+@media screen and (max-width: 350px) {
+    .tl-timeline-content {
+        padding: 0.75rem;
+        padding-left: 3rem;
+    }
+
+    .tl-timeline-dot {
+        width: 30px;
+        height: 30px;
+    }
+}

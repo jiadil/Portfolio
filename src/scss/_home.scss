@@ -27,11 +27,15 @@
     //   }
     // }
     .tl-home-intro-text {
-        background-color: #fefefe;
+        background: var(--container-color);
         text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .tl-home-intro-text-title {
             font-size: var(--big-font-size);
-            margin: 22% 13% 7% 13%;
+            // margin: 22% 13% 7% 13%;
             #typewriter {
                 font-size: var(--h2-font-size);
                 font-family: var(--robotomono-font);
@@ -84,6 +88,39 @@
 }
 
 /////////////////////////////////////////////////////////////
+/// Animations
+.tl-about-container {
+    .tl-about-image {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform, opacity; // Optimize performance
+
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .tl-about-data {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform, opacity; // Optimize performance
+
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+/* Optional: Add a slight delay between image and text animations */
+.tl-about-data {
+    transition-delay: 0.1s !important;
+}
+
+/////////////////////////////////////////////////////////////
 /// Media
 // <= 350px
 @media screen and (max-width: 350px) {
@@ -107,6 +144,12 @@
         }
         .tl-button {
             margin-bottom: 25%;
+        }
+        .tl-home-intro-text {
+            width: 100vw;
+            height: 60vh;
+            min-height: auto;
+            padding-top: calc(var(--header-height) + 1rem);
         }
     }
     
@@ -139,9 +182,9 @@
                 margin-left: 10%;
                 margin-right: 10%;
             }
-            .tl-home-intro-text-title {
-                margin: 13% 10% 5% 10%;
-            }
+            // .tl-home-intro-text-title {
+            //     margin: 13% 10% 5% 10%;
+            // }
         }
     }
 }

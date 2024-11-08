@@ -28,6 +28,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 0%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 0%, 80%);
     --light-color: rgba(108, 98, 98, 0.2);
+    --light-medium-color: rgb(0 0 0 / 37%);
 
     // Font
     --body-font: "Caudex", "Barlow", "Poppins", sans-serif;
@@ -139,7 +140,7 @@ a {
     color: var(--text-color);
     &:hover {
         // color: #e17a8b;
-        color: white;
+        color: var(--light-medium-color);
     }
 }
 
@@ -191,7 +192,7 @@ p {
 /// Button
 .tl-button {
     display: inline-block;
-    background-color: white;
+    background: var(--container-color);
     padding: .6rem 2rem;
     // border-radius: .5rem;
     font-weight: var(--font-medium);
